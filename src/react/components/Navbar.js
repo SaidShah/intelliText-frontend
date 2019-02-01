@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom'
+import NavBarLoggedOut from './NavbarLoggedOut'
+import NavBarLoggedIn from './NavbarLoggedIn'
 
 class Navbar extends Component {
 
@@ -21,12 +23,9 @@ render() {
           <li className="nav-item">
             <Link className="nav-link" to="/train">Train</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/login">Log in</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/signup">Sign up</Link>
-          </li>
+          {this.props.user ? <NavBarLoggedIn/> : <NavBarLoggedOut/>}
+
+
         </ul>
         <ul className="navbar-nav nav-flex-icons">
           <li className="nav-item">

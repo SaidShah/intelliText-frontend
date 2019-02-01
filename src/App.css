@@ -1,4 +1,30 @@
+body{
+  background: lightblue;
+}
 
+
+.card{
+margin-left: auto;
+margin-right: auto;
+padding-right: 20%;
+padding-left: 20%;
+}
 .App {
   text-align: center;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.form-container{
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.container{
+
+
+
 }
